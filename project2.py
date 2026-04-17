@@ -37,6 +37,7 @@ class StudentAnalyzer:
         print("===================================")
 
 
+# Main Program
 analyzer = StudentAnalyzer()
 
 n = int(input("Enter number of students: "))
