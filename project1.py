@@ -2,7 +2,7 @@
 
 class StudentAnalyzer:
     def __init__(self):
-        self.students = {}   # dictionary → {name: marks}
+        self.students = {}  
 
     def add_student(self, name, marks):
         if name in self.students:
@@ -20,11 +20,10 @@ class StudentAnalyzer:
         highest = max(marks_list)
         lowest = min(marks_list)
 
-        # Find students with highest & lowest marks
         highest_students = [name for name, m in self.students.items() if m == highest]
         lowest_students = [name for name, m in self.students.items() if m == lowest]
 
-        # Report
+        
         print("\n========== STUDENT REPORT ==========")
         print(f"Total Students : {len(self.students)}")
         print(f"Average Marks  : {avg:.2f}")
@@ -46,5 +45,4 @@ for i in range(n):
     marks = int(input("Enter marks: "))
     analyzer.add_student(name, marks)
 
-# Show final report after all input
 analyzer.show_report()
