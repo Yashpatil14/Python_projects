@@ -46,5 +46,4 @@ for i in range(n):
     analyzer.add_student(name, marks)
 
 
-
 analyzer.show_report()
