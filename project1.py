@@ -45,4 +45,6 @@ for i in range(n):
     marks = int(input("Enter marks: "))
     analyzer.add_student(name, marks)
 
+
+
 analyzer.show_report()
